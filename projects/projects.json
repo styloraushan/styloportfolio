@@ -1,0 +1,118 @@
+[
+    
+
+  {
+    "name": "E Learning Platform",
+    "desc": "An E-Learning Platform is a comprehensive web-based application designed to facilitate online education using html, css, javascript and php.  ",
+    "image": "elearn.png", 
+    "category": "lamp",
+    "links": {
+      "view": "https://learnkro.netlify.app/",
+      "code": "https://github.com/styloraushan/learning-platform"
+    }
+  },
+  {
+    "name": "Flipkart PHP",
+    "desc": "Full-Stack Flipkart Clone Using LAMP Stack. With all major features and OTP authentication and Cashfree payment gateway.",
+    "image": "flipkartphp.png",
+    "category": "lamp",
+    "links": {
+      "view": "https://github.com/styloraushan/Flipkart-Clone",
+      "code": "https://github.com/styloraushan/Flipkart-Clone"
+    }
+  },
+  {
+    "name": "Portfolio Website",
+    "desc": "A portfolio website showcases  my skills, projects, and achievements, serving as a personal brand and professional resume online using html, css, javascript.",
+    "image": "port2.png", 
+    "category": "mern",
+    "links": {
+      "view": "https://theinforaushan.netlify.app/",
+      "code": "https://github.com/styloraushan/portfolio"
+    }
+  },
+  {
+    "name": "NotyStack Android",
+    "desc": "Fully fledged android CRUD app based on different design patterns. Built using Java, XML, SQLite, Firebase, RoomDB, MVVM.",
+    "image": "notystackandroid.png", 
+    "category": "android",
+    "links": {
+      "view": "https://github.com/styloraushan/notystack-android",
+      "code": "https://github.com/styloraushan/notystack-android"
+    }
+  },
+
+  {
+    "name": "Bank Management System",
+    "desc": "The Bank Management System, built using Java Swing, offers a user-friendly interface for managing accounts, transactions, customer details, and banking operations efficiently.",
+    "image": "bank.png",
+    "category": "java",
+    "links": {
+      "view": "https://github.com/styloraushan/ATM-ProSuite-",
+      "code": "https://github.com/styloraushan/ATM-ProSuite-"
+    }
+  },
+  {
+    "name": "Admin based Quiz Portal",
+    "desc": "This website is designed for taking quizzes using HTML, CSS, JavaScript, and PHP, featuring interactive user interfaces, dynamic content, and secure data handling.",
+    "image": "quiz.png",
+    "category": "lamp",
+    "links": {
+      "view": "https://github.com/styloraushan/Quizze",
+      "code": "https://github.com/styloraushan/quizze"
+    }
+  },
+
+  {
+    "name": "Intel Review Sentiment Analysis",
+    "desc": "Intel Review Sentiment Analysis leverages Python, Pandas, NLP libraries (NLTK, spaCy), scikit-learn, LSTM models, and data visualization tools like Matplotlib.",
+    "image": "senti.png",
+    "category": "python",
+    "links": {
+      "view": "https://github.com/styloraushan/intel_Products-_Sentiment-_Analysis-",
+      "code": "https://github.com/styloraushan/intel_Products-_Sentiment-_Analysis-"
+    }
+  },
+  {
+    "name": "Weather App",
+    "desc": "It's a Simple Weather Application is a user-friendly web-based tool created with HTML, CSS, & JavaScript..",
+    "image": "weatherapp.png",
+    "category": "basicweb",
+    "links": {
+      "view": "https://github.com/styloraushan/web-ui-clones",
+      "code": "https://github.com/styloraushan/web-ui-clones"
+    }
+  },
+ 
+ 
+  {
+    "name": "Portfolio Website",
+    "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
+    "image": "port.png",
+    "category": "basicweb",
+    "links": {
+      "view": "https://inforaushan.netlify.app/",
+      "code": "https://github.com/styloraushan/Portfolio-Website"
+    }
+  },
+  {
+    "name": "Scientific Calculator",
+    "desc": "This is a simple scientific calculator built using HTML, CSS, and JavaScript. It provides  scientific operation and more.",
+    "image": "calci.png",
+    "category": "basicweb",
+    "links": {
+      "view": "https://cacisci.netlify.app/",
+      "code": "https://github.com/styloraushan/scientific-calculator"
+    }
+  },
+  {
+    "name": "PHP Banking Website",
+    "desc": "Basic Banking System based on PHP and MySQL database. Made with HTML, CSS, JavaScript and backend with PHP.",
+    "image": "phpbank.png",
+    "category": "lamp",
+    "links": {
+      "view": "https://github.com/styloraushan/ApnaBankSystem",
+      "code": "https://github.com/styloraushan/ApnaBankSystem"
+    }
+  }
+]
