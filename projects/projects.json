@@ -14,7 +14,7 @@
   {
     "name": "Proctored Assessment Platform",
     "desc": "A secure online examination system that uses AI-based proctoring to monitor test-takers and prevent cheating.",
-    "image": "assessmnt.png", 
+    "image": "assessment.png", 
     "category": "mern",
     "links": {
       "view": "https://github.com/styloraushan/HexaWare-OnlineAssessment.git",
