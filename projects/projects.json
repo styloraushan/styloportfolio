@@ -12,6 +12,16 @@
     }
   },
   {
+    "name": "Proctored Assessment Platform",
+    "desc": "A secure online examination system that uses AI-based proctoring to monitor test-takers and prevent cheating.",
+    "image": "assessmnt.png", 
+    "category": "mern",
+    "links": {
+      "view": "https://github.com/styloraushan/HexaWare-OnlineAssessment.git",
+      "code": "https://github.com/styloraushan/HexaWare-OnlineAssessment.git"
+    }
+  },
+  {
     "name": "Flipkart PHP",
     "desc": "Full-Stack Flipkart Clone Using LAMP Stack. With all major features and OTP authentication and Cashfree payment gateway.",
     "image": "flipkartphp.png",
