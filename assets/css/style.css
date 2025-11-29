@@ -1441,6 +1441,107 @@ form .button-area {
 
 
 
+.achievement-box img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.achievement-box img:hover {
+    transform: scale(1.03);
+}
 
 
 
+
+
+    
+        /* Card Styling */
+     .achievement-slide {
+    border-radius: 18px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ff6b6b, #5f27cd);
+    padding: 3px;
+}
+
+.achievement-inner {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Responsive Image */
+.achievement-inner img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.achievement-inner img:hover {
+    transform: scale(1.06);
+}
+
+.achievement-caption {
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Navigation Arrows */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #5f27cd;
+}
+
+/* Pagination Dots */
+.swiper-pagination-bullet {
+    background: #5f27cd;
+    opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff6b6b;
+}
+
+/* Responsive Popup */
+.gslide-description {
+    font-size: 15px;
+    color: #1e0303;
+    margin-top: 8px;
+}
+
+/* 🔥 FULL RESPONSIVE FIXES */
+@media (max-width: 1200px) {
+    .achievement-inner img {
+        height: 260px;
+    }
+}
+
+@media (max-width: 992px) {
+    .achievement-inner img {
+        height: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    .achievement-inner img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 576px) {
+    .achievement-inner img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .achievement-inner img {
+        height: 180px;   /* Smaller images fit better */
+    }
+}

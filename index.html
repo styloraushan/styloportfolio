@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Raushan Kumar, portfolio, kumar, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
     <meta name="description" content="Welcome to Raushan's Portfolio. Full-Stack Web Developer and Android App Developer" />
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Font Awesome -->
@@ -274,6 +284,132 @@
      </div>
 </section>
 <!-- skills section ends -->
+
+ <section class="py-5" style="background: linear-gradient(135deg, #f8e1ff, #e3f2ff); min-height: 50vh;">
+        <div class="container">
+
+            <h2 class="text-center fw-bold mb-5 heading" sy>Our Achievements</h2>
+
+            <!-- Swiper Container -->
+            <div class="swiper mySwiper">
+
+                <div class="swiper-wrapper">
+
+                    <!-- IMAGE Example -->
+                    <div class="swiper-slide">
+                        <a href="achievement/achieve6.jpg"
+                           class="glightbox"
+                           data-title="Award Ceremony"
+                           data-description="Honoured to receive the Dr. A. Shanmugasundaram Gold Medal for Academic Excellence 
+                           and Meritorious Achievements (2021–2025) from Vinayaka Mission’s Research Foundation – AVIT.">
+
+                            <div class="achievement-slide">
+                                <div class="achievement-inner">
+                                    <img src="achievement/achieve6.jpg" alt="">
+                                    <div class="achievement-caption">Gold medal</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    
+
+                    <!-- IMAGE + Text -->
+                    <div class="swiper-slide">
+                        <a href="achievement/acieve2.png"
+                           class="glightbox"
+                           data-title="18th 
+                           Convocation of VMRF"
+                           data-description="Honored to receive the **Gold Medal 🥇 as the First University Rank Holder at the 18th 
+                           Convocation of Vinayaka Mission’s Research Foundation (VMRF) 🎓.">
+
+                            <div class="achievement-slide">
+                                <div class="achievement-inner">
+                                    <img src="achievement/acieve2.png" alt="">
+                                    <div class="achievement-caption">18th 
+                           Convocation</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                   
+
+                    <!-- VIDEO Slide -->
+                    <div class="swiper-slide">
+                        <a href="achievement/vmrf.mp4"
+                           class="glightbox"
+                           data-type="video"
+                           data-title="Event Highlights"
+                           data-description="Watch the best moments from our 18th 
+                           Convocation at VMRF University.">
+
+                            <div class="achievement-slide">
+                                <div class="achievement-inner">
+                                    <img src="achievement/achieve7.jpg" alt="">
+                                    <div class="achievement-caption">Event Highlights (Video)</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- IMAGE -->
+                    <div class="swiper-slide">
+                        <a href="achievement/achieve3.png"
+                           class="glightbox"
+                           data-title="AVIT Post On Linkedin"
+                           data-description="Special session by industry experts and scholars.">
+
+                            <div class="achievement-slide">
+                                <div class="achievement-inner">
+                                    <img src="achievement/achieve3.png" alt="">
+                                    <div class="achievement-caption"> Rank's Holder</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                      <!-- IMAGE + Text -->
+                    <div class="swiper-slide">
+                        <a href="achievement/achieve4.png"
+                           class="glightbox"
+                           data-title="Certificate of Excellence – HCLTech Career Shaper"
+                           data-description=" I’ve been awarded the **Certificate of Excellence**
+                            for being the **Best Performer** in the **Dev Projects (Python)** during my training with **HCLTech**. 🎉">
+
+                            <div class="achievement-slide">
+                                <div class="achievement-inner">
+                                    <img src="achievement/achieve4.png" alt="">
+                                    <div class="achievement-caption">Certificate of Excellence – HCLTech </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Navigation arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <!-- Pagination dots -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+            <!-- View All Gallery Button -->
+            <!-- <div class="text-center mt-4">
+                <a href="" class="btn ">View All</a>
+            </div> -->
+
+        </div>
+    </section>
+
+
+
 
 <!-- education section starts -->
 <section class="education" id="education">
@@ -609,7 +745,9 @@
   </div>
 </section>
 <!-- contact section ends -->
-
+<!-- achievement section -->
+ 
+<!-- achievement section end -->
 
 <!-- footer section starts -->
 <section class="footer">
@@ -776,6 +914,55 @@ setInterval(nextImage, 5000);
 </script>
     
  
+ <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    
+       
+       <script>
+         // Swiper Slider
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+        },
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+
+        // ⭐ Responsive — Small screen always 1 slide
+        breakpoints: {
+            1400: { slidesPerView: 4 },
+            1200: { slidesPerView: 4 },
+            992: { slidesPerView: 3 },
+            768: { slidesPerView: 2 },
+            0: { slidesPerView: 1 }  // mobile 1 slide only
+        }
+    });
+
+    const lightbox = GLightbox({
+        touchNavigation: true,
+        loop: true,
+        zoomable: true,
+        openEffect: "zoom",
+        closeEffect: "fade",
+        slideEffect: "fade",
+        autoplayVideos: true
+    });
+</script>
 </body>
 </html>
