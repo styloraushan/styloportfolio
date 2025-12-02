@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -237,7 +238,7 @@ header .navbar ul li a:hover {
   padding-top: 1rem;
   z-index: 1;
 }
-.home .image {
+/* .home .image {
   flex: 1 1 40rem;
   display: flex;
   justify-content: center;
@@ -303,6 +304,131 @@ header .navbar ul li a:hover {
 .home .image img:hover {
   transform: scale(1.05);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+} */
+/* ===========================
+   BASE DESKTOP STYLE
+=========================== */
+
+.home .image {
+  flex: 1 1 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.home .image::before {
+  content: "";
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  background: conic-gradient(
+    from 0deg,
+    #ff416c,
+    #ff4b2b,
+    #ff6a00,
+    #f9d423,
+    #00c9ff,
+    #4facfe,
+    #6a82fb,
+    #ff416c
+  );
+  clip-path: polygon(
+    50% 0%, 
+    61% 35%, 
+    98% 35%, 
+    68% 57%, 
+    79% 91%, 
+    50% 70%, 
+    21% 91%, 
+    32% 57%, 
+    2% 35%, 
+    39% 35%
+  );
+  animation: rotateBorder 6s linear infinite;
+  z-index: 0;
+  filter: blur(2px);
+}
+
+.home .image img {
+  width: 500px;
+  height: 600px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+@keyframes rotateBorder {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.home .image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+
+
+/* ===========================
+   RESPONSIVE TABLET (max 992px)
+=========================== */
+
+@media (max-width: 992px) {
+  .home .image::before {
+    width: 380px;
+    height: 380px;
+  }
+
+  .home .image img {
+    width: 320px;
+    height: 420px;
+  }
+}
+
+
+
+/* ===========================
+   RESPONSIVE MOBILE (max 768px)
+=========================== */
+
+@media (max-width: 768px) {
+  .home .image {
+    margin-top: 20px;
+  }
+
+  .home .image::before {
+    width: 300px;
+    height: 300px;
+  }
+
+  .home .image img {
+    width: 260px;
+    height: 340px;
+  }
+}
+
+
+
+/* ===========================
+   SMALL MOBILE (max 480px)
+=========================== */
+
+@media (max-width: 480px) {
+  .home .image::before {
+    width: 240px;
+    height: 240px;
+  }
+
+  .home .image img {
+    width: 200px;
+    height: 260px;
+  }
 }
 
 .home .content h2 {
