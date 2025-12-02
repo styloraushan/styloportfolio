@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -29,6 +28,28 @@ body {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+.whatsapp-float {
+    position: fixed;
+    left: 20px;       /* LEFT SIDE */
+    bottom: 20px;     /* distance from bottom */
+    width: 60px;
+    height: 60px;
+    z-index: 999999;
+}
+
+.whatsapp-float img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.whatsapp-float img:hover {
+    transform: scale(1.1);
+}
+
+
 
 *::selection {
   background: #2b3dda;
