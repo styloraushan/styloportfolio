@@ -530,6 +530,7 @@ header .navbar ul li a.active::after {
     min-width: 0;
 
     overflow: visible;
+    
 }
 
 
@@ -918,22 +919,21 @@ border-bottom: 5px solid white;
 /* =========================================
    SMALL MOBILE
 ========================================= */
-
 @media (max-width: 480px) {
 
     .home .image {
-        padding-top: 15px;
-        padding-bottom: 35px;
+        padding-top: 2px;
+        padding-bottom: 20px;
     }
 
     .home .hero-visual {
         width: 100%;
-
         height: 390px;
-
         max-width: 310px;
-
         margin: 0 auto;
+
+        /* Move complete visual upward */
+        transform: translateY(-50px);
     }
 
 
@@ -970,12 +970,10 @@ border-bottom: 5px solid white;
     .home .hero-card img {
         width: 100%;
         height: 100%;
-        
+
         object-fit: contain;
     }
 }
-
-
 /* =========================================
    VERY SMALL MOBILE
 ========================================= */
