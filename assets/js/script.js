@@ -216,8 +216,8 @@ document.onkeydown = function (e) {
 /* ===== SCROLL REVEAL ANIMATION ===== */
 const srtop = ScrollReveal({
     origin: 'top',
-    distance: '80px',
-    duration: 1000,
+    distance: '50px',
+    duration: 800,
     reset: true
 });
 
@@ -246,16 +246,4 @@ srtop.reveal('.about .content .resumebtn', { delay: 200 });
 srtop.reveal('.skills .container', { interval: 200 });
 srtop.reveal('.skills .container .bar', { delay: 400 });
 
-/* SCROLL EDUCATION */
-srtop.reveal('.education .box', { interval: 200 });
 
-/* SCROLL PROJECTS */
-srtop.reveal('projects-container .project-card', { interval: 200 });
-
-/* SCROLL EXPERIENCE */
-srtop.reveal('.experience .timeline', { delay: 400 });
-srtop.reveal('.experience .timeline .container', { interval: 400 });
-
-/* SCROLL CONTACT */
-srtop.reveal('.contact .container', { delay: 400 });
-srtop.reveal('.contact .container .form-group', { delay: 400 });
