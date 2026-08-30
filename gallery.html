@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements Gallery</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+    <style>
+        body {
+            background: #f5f5f5;
+        }
+
+        .gallery-title {
+            font-weight: 700;
+            font-size: 32px;
+        }
+
+        /* Filter Buttons */
+        .filter-btns button {
+            background: #fff;
+            border: 2px solid #5f27cd;
+            color: #5f27cd;
+            border-radius: 30px;
+            padding: 8px 20px;
+            margin: 5px;
+            transition: 0.3s;
+        }
+
+        .filter-btns button.active,
+        .filter-btns button:hover {
+            background: #5f27cd;
+            color: #fff;
+        }
+
+        /* Gallery Items */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        /* Responsive fixed height for all gallery media */
+.gallery-item img,
+.gallery-item video {
+    width: 100%;
+    height: 320px !important;   /* Fixed height */
+    object-fit: cover;           /* Prevent distortion */
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+/* On tablets and mobile → keep the same height */
+@media (max-width: 768px) {
+    .gallery-item img,
+    .gallery-item video {
+        height: 280px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery-item img,
+    .gallery-item video {
+        height: 420px !important;
+    }
+}
+
+        .gallery-item:hover img,
+        .gallery-item:hover video {
+            transform: scale(1.06);
+            filter: brightness(0.85);
+        }
+
+        /* Caption Overlay */
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+            color: #fff;
+            font-weight: 600;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container py-5">
+
+        <h2 class="text-center gallery-title mb-4">Full Achievements Gallery</h2>
+
+        <!-- Filter Buttons -->
+        <div class="text-center filter-btns mb-4">
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="image">Images</button>
+            <button data-filter="video">Videos</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="row" id="galleryGrid">
+
+            <!-- IMAGE 1 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 gallery-item" data-type="image">
+                <a href="achievement/achieve1.png"
+                   class="glightbox"
+                   data-title="Award Ceremony"
+                   data-description="A grand award ceremony hosted by our institution.">
+
+                    <img src="achievement/achieve1.png" alt="">
+                    <div class="gallery-caption">Award Ceremony</div>
+
+                </a>
+            </div>
+
+            <!-- IMAGE 2 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 gallery-item" data-type="image">
+                <a href="images/a2.jpg"
+                   class="glightbox"
+                   data-title="MOU Signing"
+                   data-description="Memorandum of Understanding signing event">
+
+                    <img src="images/a2.jpg" alt="">
+                    <div class="gallery-caption">MOU Signing</div>
+
+                </a>
+            </div>
+
+            <!-- IMAGE 3 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 gallery-item" data-type="image">
+                <a href="images/a3.jpg"
+                   class="glightbox"
+                   data-title="Event Celebration"
+                   data-description="Students enjoying a fun celebration event">
+
+                    <img src="images/a3.jpg" alt="">
+                    <div class="gallery-caption">Event Celebration</div>
+
+                </a>
+            </div>
+
+            <!-- IMAGE 4 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 gallery-item" data-type="image">
+                <a href="images/a4.jpg"
+                   class="glightbox"
+                   data-title="Guest Lecture"
+                   data-description="A motivational guest lecture session">
+
+                    <img src="images/a4.jpg" alt="">
+                    <div class="gallery-caption">Guest Lecture</div>
+
+                </a>
+            </div>
+
+            <!-- VIDEO 1 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 gallery-item" data-type="video">
+                <a href="videos/v1.mp4"
+                   class="glightbox"
+                   data-title="Campus Video Tour"
+                   data-description="A walkthrough tour showing the main campus.">
+
+                    <video src="videos/v1.mp4"></video>
+                    <div class="gallery-caption">Campus Tour</div>
+
+                </a>
+            </div>
+
+            <!-- VIDEO 2 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4 gallery-item" data-type="video">
+                <a href="videos/v2.mp4"
+                   class="glightbox"
+                   data-title="Annual Day Highlights"
+                   data-description="A highlight video of annual day performances.">
+
+                    <video src="videos/v2.mp4"></video>
+                    <div class="gallery-caption">Annual Day</div>
+
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script>
+        // Init Lightbox
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            zoomable: true,
+            openEffect: "fade",
+            closeEffect: "fade",
+            slideEffect: "zoom",
+            plyr: {
+                css: 'https://cdn.plyr.io/3.6.8/plyr.css',
+                js: 'https://cdn.plyr.io/3.6.8/plyr.js',
+            }
+        });
+
+        // Filtering Feature
+        const buttons = document.querySelectorAll(".filter-btns button");
+        const items = document.querySelectorAll(".gallery-item");
+
+        buttons.forEach(btn => {
+            btn.addEventListener("click", () => {
+
+                // Remove active class
+                buttons.forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+
+                let filter = btn.getAttribute("data-filter");
+
+                items.forEach(item => {
+                    item.style.display =
+                        (filter === "all" || item.getAttribute("data-type") === filter)
+                            ? "block"
+                            : "none";
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
