@@ -928,12 +928,12 @@ border-bottom: 5px solid white;
 
     .home .hero-visual {
         width: 100%;
-        height: 390px;
+        height: 320px;
         max-width: 310px;
         margin: 0 auto;
 
         /* Move complete visual upward */
-        transform: translateY(-50px);
+        transform: translateY(-60px);
     }
 
 
